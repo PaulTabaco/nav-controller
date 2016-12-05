@@ -12,6 +12,8 @@
 		DA0AE7971C3A98A60040E165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0AE7951C3A98A60040E165 /* Main.storyboard */; };
 		DA0AE7991C3A98A60040E165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0AE7981C3A98A60040E165 /* Assets.xcassets */; };
 		DA0AE79C1C3A98A60040E165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0AE79A1C3A98A60040E165 /* LaunchScreen.storyboard */; };
+		DA0AE7A61C3A9CA70040E165 /* YellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AE7A51C3A9CA70040E165 /* YellowVC.swift */; };
+		DA0AE7A81C3A9E440040E165 /* blueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AE7A71C3A9E440040E165 /* blueVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		DA0AE7981C3A98A60040E165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0AE79B1C3A98A60040E165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0AE79D1C3A98A60040E165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0AE7A51C3A9CA70040E165 /* YellowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellowVC.swift; sourceTree = "<group>"; };
+		DA0AE7A71C3A9E440040E165 /* blueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blueVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				DA0AE7981C3A98A60040E165 /* Assets.xcassets */,
 				DA0AE79A1C3A98A60040E165 /* LaunchScreen.storyboard */,
 				DA0AE79D1C3A98A60040E165 /* Info.plist */,
+				DA0AE7A51C3A9CA70040E165 /* YellowVC.swift */,
+				DA0AE7A71C3A9E440040E165 /* blueVC.swift */,
 			);
 			path = "nav-controller";
 			sourceTree = "<group>";
@@ -91,12 +97,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Home;
 				TargetAttributes = {
 					DA0AE78D1C3A98A60040E165 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 3576WDCD7W;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -136,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0AE7A81C3A9E440040E165 /* blueVC.swift in Sources */,
 				DA0AE7941C3A98A60040E165 /* ViewController.swift in Sources */,
 				DA0AE7921C3A98A60040E165 /* AppDelegate.swift in Sources */,
+				DA0AE7A61C3A9CA70040E165 /* YellowVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +185,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -221,8 +232,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -241,6 +254,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -254,6 +268,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "home.nav-controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -265,6 +280,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "home.nav-controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -287,6 +303,7 @@
 				DA0AE7A21C3A98A60040E165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
